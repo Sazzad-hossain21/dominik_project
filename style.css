@@ -147,6 +147,11 @@ p {
     margin-top: 5rem;
 }
 
+.card-btn:hover {
+    background: #ffcba4;
+    color: #fff;
+}
+
 /* Section-4 */
 
 .section-4 {

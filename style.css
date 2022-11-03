@@ -1,0 +1,276 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+h2 {
+    font-size: 80px;
+    font-weight: 400;
+}
+
+p {
+    color: #000;
+    font-size: 1.4rem;
+}
+
+
+/* Hero */
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.52), rgba(0, 0, 0, 0.73)), url(./images/hero_bg.jpg) no-repeat center / cover;
+}
+
+.hero .container {
+    height: 90vh;
+    position: relative;
+}
+
+.hero-sub-heading {
+    color: #ffcba4;
+    font-size: 4rem;
+}
+
+.hero-heading {
+    color: #ffcba4;
+    font-size: 8rem;
+    margin-top: -2rem;
+}
+
+.hero-btn {
+    position: absolute;
+    bottom: 5%;
+    text-align: center;
+    border: 1px solid #ffcba4;
+    border-radius: 50%;
+    padding: 1rem;
+    transition: all 0.4s linear;
+}
+
+.hero-btn:hover {
+    background: #ffcba4;
+}
+
+.hero-btn:hover i {
+    color: #5e1812;
+}
+
+.hero-btn i {
+    font-size: 2rem;
+    color: #ffcba4;
+}
+
+/* Section-2 */
+
+.section-2 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.section-2 h2 {
+    text-transform: uppercase;
+    color: #5e1812;
+}
+
+.sec-2-col {
+    max-width: 75rem;
+    margin: 0 auto;
+}
+
+.sec-2-col .sec-2-heading2 {
+    margin-left: 10rem;
+}
+
+.sec-2-col .sec-2-desc {
+    margin-left: 10rem;
+    width: 40rem;
+}
+
+.card-1 {
+    background: rgba(94,24,18,255);
+}
+
+.card-2 {
+    background: rgba(39,37,19,255);
+}
+
+.card-3 {
+    background: rgba(28,22,7,255);
+}
+
+.card {
+    border: none;
+    outline: none;
+    padding: 4rem 2rem;
+}
+
+.card-text-1 {
+    font-size: 30px;
+    margin-bottom: 5rem;
+    color: #ffcba4;
+}
+
+.card-title {
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #ffcba4;
+    margin-bottom: 2rem;
+    font-weight: 400;
+}
+
+.card-text-2 {
+    padding-left: 8%;
+    padding-right: 8%;
+    color: #ffcba4;
+}
+
+.card-btn {
+    padding: 1rem 3rem;
+    border-radius: 50px;
+    font-size: 1.6rem;
+    border: 1px solid #fff;
+    outline: none;
+    color: #fff;
+    background: transparent;
+    margin-top: 5rem;
+}
+
+/* Section-4 */
+
+.section-4 {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    background: rgba(255,239,227,255);
+}
+
+.section-4 h2 {
+    font-size: 6rem;
+    text-transform: uppercase;
+}
+
+.sec-4-col {
+    z-index: 10;
+}
+
+.sec-4-col .sec-4-heading2 {
+    margin-left: 10rem;
+}
+
+/* Footer */
+
+footer {
+    padding-top: 8rem;
+    padding-bottom: 5rem;
+    background: rgba(94,24,18,255);
+}
+
+.footer-sub-heading {
+    font-size: 1.5rem;
+    color: #ffcba4;
+}
+
+.footer-heading {
+    font-size: 3rem;
+    color: #ffcba4;
+}
+
+footer p {
+    color: #ffcba4;
+    font-weight: 300;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 768px) {
+
+    * {
+        font-size: 55%;
+    }
+    
+    .hero-heading {
+        font-size: 5rem;
+        margin-top: -1rem;
+    }
+
+    .hero-sub-heading {
+        font-size: 2.5rem;
+    }
+
+    .sec-2-col,
+    .sec-4-col {
+        text-align: center;
+    }
+
+    .sec-2-col h2 {
+        font-size: 5rem;
+    }
+
+    .sec-2-col .sec-2-heading2 {
+        margin-left: 0;
+    }
+
+    .sec-2-col .sec-2-desc {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .card-text-1 {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 4rem;
+    }
+
+    .sec-4-col {
+        margin-bottom: 2rem;
+    }
+
+    .sec-4-col h2 {
+        font-size: 4rem;
+    }
+
+    .sec-4-col .sec-4-heading2 {
+        margin-left: 0 !important;
+    }
+
+    footer .col-md-6 {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .hero-heading,
+    .hero-sub-heading {
+        text-align: center;
+    }
+
+    .sec-2-col h2 {
+        font-size: 3.5rem;
+    }
+
+    .sec-4-col h2 {
+        font-size: 3.5rem;
+    }
+
+    .section-4 {
+        padding-top: 4rem;
+    }
+
+    footer {
+        text-align: center;
+    }
+}

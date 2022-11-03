@@ -145,11 +145,13 @@ p {
     color: #fff;
     background: transparent;
     margin-top: 5rem;
+    transition: all 0.4s linear;
 }
 
 .card-btn:hover {
     background: #ffcba4;
     color: #fff;
+    border: none;
 }
 
 /* Section-4 */
